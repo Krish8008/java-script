@@ -279,11 +279,41 @@ const user2 = {}
 
 //console.log(realUser.userFullNume.userName.surname); // => Shewale
 
-const obj1 = {1:"a", 2:"b"}
-const obj2 = {3:"c", 4:"d"}
-const obj3 = {5:"e", 6:"f"}
+// const obj1 = {1:"a", 2:"b"}
+// const obj2 = {3:"c", 4:"d"}
+// const obj3 = {5:"e", 6:"f"}
 
-const obj4 = Object.assign({}, obj1, obj2, obj3)
-console.log(obj4);  // =>                          { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
- const obj5 = {...obj1, ...obj2, ...obj3}
- console.log(obj5) // =>                           { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
+// const obj4 = Object.assign({}, obj1, obj2, obj3)
+// console.log(obj4);  // =>                          { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
+//  const obj5 = {...obj1, ...obj2, ...obj3}
+//  console.log(obj5) // =>                           { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
+ 
+ 
+ // ********************************************* scope *************************************
+
+//  console.log(addOne(5)) // => it is run
+//  function addOne(num) {
+//         return num + 1
+//  }
+
+
+// console.log(addTwo); // => ts gives error , Cannot access 'addTwo' before initialization
+//  const addTwo = function (num) {
+//         return num + 2
+//  }
+
+//function
+
+function square(number) {
+  return number * number;
+}
+
+
+// arrow function
+const sumOfTwoNum = (num1, num2) => num1 + num2 //=> it is same as the following function
+
+const sumOfTwoNum2 = (num1, num2) =>{
+    return num1 + num2
+}
+
+console.log(sumOfTwoNum(5,5))
